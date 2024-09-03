@@ -1,0 +1,27 @@
+8051 Assembler           Version 1.00   09/03/124 10:21:27    Page 1
+C:\Users\brnsm\Desktop\Nova pasta\Meu portifolio\Microcontroladores\segundaaula.a51
+
+
+
+    1 0000              ;projeto aula 02
+    2 0000              ;
+    3 0000              ;altera o nivel logico do PORT0
+    4 0000              ;
+    5 0000              ;Autor: Bruno Oliveira
+    6 0000              ;
+    7 0000              ;MCU: AT89S51
+    8 0000              
+    9 0000                      org     0000h           ;origem no 00h de memoria
+   10 0000              
+   11 0000              inicio:
+   12 0000              
+   13 0000 758000               mov     p0,#00h         ;todo PORT0 em nivel logico baixo
+   14 0003 7580FF               mov     p0,#0FFh        ;todo PORT0 em nivel logico alto
+   15 0006 020000               jmp     inicio          ;pula para o inicio
+   16 0009              
+   17 0009                      end                     ;final do programa
+
+Defined Symbols:
+
+Defined Labels:
+  INICIO                                    000000  0
